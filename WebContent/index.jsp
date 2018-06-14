@@ -10,7 +10,7 @@
 
 		document.getElementById("toInput").onclick = function() {
 
-			location.href = "inputt.html";
+			location.href = "input.jsp";
 		}
 		document.getElementById("toOutput").onclick = function() {
 
