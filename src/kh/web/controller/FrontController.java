@@ -36,7 +36,9 @@ public class FrontController extends HttpServlet {
 				String email = request.getParameter("email");
 				
 				PersonDTO pdto= new PersonDTO(name,phone,email);
-				
+				pdto.setName(name);
+				pdto.setPhone(phone);
+				pdto.setEmail(email);
 				int result = pdao.insertData(pdto);
 				request.setAttribute("result", result);
 				isRedirect = false;
