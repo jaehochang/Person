@@ -46,6 +46,8 @@ aria-expanded="false">
 		<tr>
 			<td style="text-align:center;"><button id="toInput" class="btn btn-default" >Input</button>
 			<td style="text-align:center;"><button id="toOutput" class="btn btn-warning">Output</button>
+			<td><button id="tel">tel</button>
+			<td><button id="email">email</button>
 		</tr>
 	</table>
 </div>
