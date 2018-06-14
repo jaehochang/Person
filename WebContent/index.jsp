@@ -4,9 +4,33 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Person Index</title>
+<script>
+	window.onload = function() {
+
+		document.getElementById("toInput").onclick = function() {
+
+			location.href = "inputt.html";
+		}
+		document.getElementById("toOutput").onclick = function() {
+
+			location.href = "outputProc.jsp";
+		}
+
+	}
+</script>
 </head>
 <body>
+	
+	<table border=1>
+		<tr>
+			<th colspan=2>Person
+		</tr>
+		<tr>
+			<td><button id="toInput">toInput</button>
+			<td><button id="toOutput">toOutput</button>
+		</tr>
+	</table>
 
 </body>
 </html>
