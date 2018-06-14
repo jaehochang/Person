@@ -1,9 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/custom.css">
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <title>Person Index</title>
 <script>
 	window.onload = function() {
@@ -14,23 +17,38 @@
 		}
 		document.getElementById("toOutput").onclick = function() {
 
-			location.href = "outputProc.jsp";
+			location.href = "output.do";
 		}
 
 	}
 </script>
 </head>
 <body>
-	
-	<table border=1>
+<nav class="navbar navbar-default">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed"
+data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+aria-expanded="false">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#">PERSON</a>
+</div>
+</nav>
+
+<div class="container">
+<div class="row">
+	<table class="table table-striped" style="border: 1px solid #dddddd">
 		<tr>
-			<th colspan=2>Person
+			<th colspan=2 style="text-align:center; font-style:bold">Person
 		</tr>
 		<tr>
-			<td><button id="toInput">toInput</button>
-			<td><button id="toOutput">toOutput</button>
+			<td style="text-align:center;"><button id="toInput" class="btn btn-default" >Input</button>
+			<td style="text-align:center;"><button id="toOutput" class="btn btn-warning">Output</button>
 		</tr>
 	</table>
-
+</div>
+</div>
 </body>
 </html>
