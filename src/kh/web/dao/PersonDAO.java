@@ -40,7 +40,7 @@ public class PersonDAO {
 		List<PersonDTO> result = new ArrayList<PersonDTO>();
 
 		while (rs.next()) {
-			result.add(new PersonDTO(rs.getInt("" + ("seq")), rs.getString("name"), rs.getString("phone"),
+			result.add(new PersonDTO(rs.getInt("" + ("seq")), rs.getString("name"), rs.getString("tel"),
 					rs.getString("email")));
 		}
 
