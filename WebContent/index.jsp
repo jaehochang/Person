@@ -17,7 +17,7 @@
 		}
 		document.getElementById("toOutput").onclick = function() {
 
-			location.href = "outputProc.jsp";
+			location.href = "output.do";
 		}
 
 	}
