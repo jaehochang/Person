@@ -19,6 +19,14 @@
 
 			location.href = "output.do";
 		}
+		document.getElementById("tel").onclick = function() {
+
+			location.href = "tel.do";
+		}
+		document.getElementById("email").onclick = function() {
+
+			location.href = "email.do";
+		}
 
 	}
 </script>
@@ -39,20 +47,32 @@
 	<div class="container">
 		<div class="row">
 			<table class="table table-striped" style="border: 1px solid #dddddd">
+				<thead>
 				<tr>
 					<th colspan=2 style="text-align: center; font-style: bold">Person
+
 					
 				</tr>
+				</thead>
+				<tbody>
 				<tr>
 					<td style="text-align: center;"><button id="toInput"
 							class="btn btn-default">Input</button>
 					<td style="text-align: center;"><button id="toOutput"
 							class="btn btn-warning">Output</button>
 				</tr>
+				<thead>
 				<tr>
-					<td><button id="tel" class="btn btn-primary">tel</button>
-					<td><button id="email" class="btn btn-success">email</button>
+					<th colspan=2 style="text-align: center; font-style: bold">Branch Training
+
+					
 				</tr>
+				</thead>
+				<tr>
+					<td style="text-align: center;"><button id="tel" class="btn btn-primary">Phone</button>
+					<td style="text-align: center;"><button id="email" class="btn btn-success">Email</button>
+				</tr>
+				</tbody>
 			</table>
 		</div>
 	</div>
