@@ -13,7 +13,7 @@
 		표시할 값이 없습니다.
 	</c:when>
 		<c:when test="${not empty result}">
-			<table>
+			<table border=1>
 				<tr>
 					<th>이름</th>
 					<th>이메일</th>
