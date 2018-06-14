@@ -44,8 +44,8 @@ aria-expanded="false">
 			<th colspan=2 style="text-align:center; font-style:bold">Person
 		</tr>
 		<tr>
-			<td style="text-align:center;"><button id="toInput" class="btn btn-default" >toInput</button>
-			<td style="text-align:center;"><button id="toOutput" class="btn btn-warning">toOutput</button>
+			<td style="text-align:center;"><button id="toInput" class="btn btn-default" >Input</button>
+			<td style="text-align:center;"><button id="toOutput" class="btn btn-warning">Output</button>
 		</tr>
 	</table>
 </div>
