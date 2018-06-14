@@ -26,11 +26,22 @@ public class FrontController extends HttpServlet {
 			String command = requestURI.substring(contextPath.length());
 
 			PersonDAO pdao = new PersonDAO();
+			
 			boolean isRedirect = true;
 			String dst = null;
 
 			if (command.equals("/input.do")) {
-
+				String name = request.getParameter("name");
+				String phone = request.getParameter("phone");
+				String email = request.getParameter("email");
+				
+				PersonDTO pdto= new PersonDTO(name,phone,email);
+				
+				int result = pdao.insertData(pdto);
+				request.setAttribute("result", result);
+				isRedirect = false;
+				dst = "inputView.jsp";
+				
 			} else if (command.equals("/output.do")) {
 				List<PersonDTO> result = pdao.printData();
 				request.setAttribute("result", result);

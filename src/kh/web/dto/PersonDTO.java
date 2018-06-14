@@ -14,6 +14,10 @@ public class PersonDTO {
 		this.email = email;
 	}
 
+	public PersonDTO(String name2, String phone2, String email2) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public int getSeq() {
 		return seq;
 	}
